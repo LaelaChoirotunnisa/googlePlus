@@ -1,31 +1,59 @@
 class Profile implements Comparable <Profile>{
 
-    private String nama,email;
+    private String nama,jeniskelamin,alamat,email,jurusan,hobi;
 
     public Profile(){
         this.nama = "";
+        this.jeniskelamin = "";
+        this.alamat = "";
         this.email = "";
+        this.jurusan = "";
+        this.hobi = "";
     }
 
-    public Profile(String nama, String email){
-        setNama(nama);
-        setEmail(email);
+    public Profile(String nama,String jeniskelamin, String alamat, String email, String jurusan, String hobi){
+        this.nama = nama;
+        this.jeniskelamin = jeniskelamin;
+        this.alamat = alamat;
+        this.email = email;
+        this.jurusan = jurusan;
+        this.hobi = hobi;
     }
-
     public void setNama(String nama) {
         this.nama = nama;
     }
-
     public String getNama() {
         return nama;
     }
-
+    public void setJeniskelamin(String jeniskelamin) {
+        this.jeniskelamin = jeniskelamin;
+    }
+    public String getJeniskelamin() {
+        return jeniskelamin;
+    }
+    public void setAlamat(String alamat) {
+        this.alamat = alamat;
+    }
+    public String getAlamat() {
+        return alamat;
+    }
     public void setEmail(String email) {
         this.email = email;
     }
-
     public String getEmail() {
         return email;
+    }
+    public void setJurusan(String jurusan) {
+        this.jurusan = jurusan;
+    }
+    public String getJurusan() {
+        return jurusan;
+    }
+    public void setHobi(String hobi) {
+        this.hobi = hobi;
+    }
+    public String getHobi() {
+        return hobi;
     }
     @Override
     public int compareTo(Profile p) {
