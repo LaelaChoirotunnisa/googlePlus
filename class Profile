@@ -5,12 +5,14 @@ class Profile implements Comparable <Profile>{
     public Profile(){
         this.nama = "";
         this.email = "";
+        this.alamat = "";
         this.jurusan = "";
     }
 
     public Profile(String nama, String email){
         setNama(nama);
         setEmail(email);
+        setAlamat(alamat);
         setJurusan(jurusan)
     }
 
@@ -28,6 +30,14 @@ class Profile implements Comparable <Profile>{
 
     public String getEmail() {
         return email;
+    }
+    
+    public void setAlamat(String alamat) {
+        this.alamat = alamat;
+    }
+
+    public String getAlamat() {
+        return alamat;
     }
     
     public void setJurusan(String jurusan) {
